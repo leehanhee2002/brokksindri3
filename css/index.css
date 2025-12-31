@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'ClipArtKorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-2@1.0/Clipartkorea-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ClipArtKorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-2@1.0/Clipartkorea-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ClipArtKorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-2@1.0/Clipartkorea-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ClipArtKorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-2@1.0/Clipartkorea-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+header {
+    width: 100%;
+    height: 48px;
+    background-color: black;
+    margin: auto;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.game {
+    background-image: url(../images/background1.jpg);
+    background-size: 100% 100%;
+}
+
+.companyname {
+    color: white;
+    padding: 50px 0px 50px 0px;
+    font-family: 'ClipArtKorea';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.rpg {
+    color: white;
+    font-family: 'ClipArtKorea';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.release {
+    color: orange;
+    padding-bottom: 50px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: 'ClipArtKorea';
+}
+
+h1 {
+    padding-top: 100px;
+    padding-bottom: 25px;
+    font-family: 'ClipArtKorea';
+}
+
+.mySwiper {position: relative;}
+.mySwiper .btn-next {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 40%; right: 2%;
+    z-index: 9;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.mySwiper .btn-prev {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 40%; right: 2%;
+    z-index: 9;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.swiper-pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+}
+.swiper-slide p {
+    font-family: 'ClipArtKorea';
+    font-size: 20px;
+}
+
+.intro {
+    width: 1600px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'ClipArtKorea';
+}

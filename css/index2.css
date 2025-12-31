@@ -1,0 +1,348 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'ClipArtKorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-2@1.0/Clipartkorea-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ClipArtKorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-2@1.0/Clipartkorea-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ClipArtKorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-2@1.0/Clipartkorea-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ClipArtKorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-2@1.0/Clipartkorea-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* 배경 이미지 변경 애니메이션 정의 */
+@keyframes changeBackground {
+  0% {
+    background-image: url(../images/seriesMH3.png);
+  }
+  25% {
+    background-image: url(../images/seriesolym.png); /* 두 번째 이미지 */
+  }
+  50% {
+    background-image: url(../images/seriesnord.png); /* 세 번째 이미지 */
+  }
+  75% {
+    background-image: url(../images/seriesbaba.png); /* 네 번째 이미지 */
+  }
+  100% {
+    background-image: url(../images/seriesMH3.png); /* 다시 첫 번째 이미지 */
+  }
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    font-family: 'ClipArtKorea';
+    text-decoration: none;
+    color: inherit;
+}
+
+
+header {
+    width: 100%;
+    top: 0; left: 0;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+header img {
+    width: 525px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+header ul {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header ul li {
+    width: 25%;
+    height: 100px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center; /* 가로 중앙 */
+    align-items: center; /* 세로 중앙 */
+}
+
+main {
+    text-align: center;
+}
+
+.game {
+    background-image: url(../images/seriesMH3.png);
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 32s infinite; /* 8초마다 배경 이미지가 변경되고 무한 반복 */
+}
+.nms {
+    border: 1px solid black;
+}
+.game a img {
+    padding-bottom: 100px;
+}
+.linkwrap {
+    display: flex;
+    gap: 50px;
+    justify-content: center; /* 가로 기준으로 가운데 정렬 */
+}
+
+.companyname,
+.rpg,
+.release {
+    color: white;
+    font-family: 'ClipArtKorea';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;  /* 텍스트 가로 중앙 정렬 */
+}
+.companyname {
+    padding: 50px 0px;
+}
+
+.wraph {
+    text-align: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;  /* 자식 요소들을 가로로 중앙 정렬 */
+}
+.wraph h1:nth-child(2) {
+    color: white;
+}
+.wraph img {
+    padding-top: 100px;
+}
+.rpg {
+    padding-top: 100px;
+}
+.release {
+    color: orange;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+#HERO {
+    background-image: url(../images/background3.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center; /* 가운데 정렬 */
+}
+#HERO h1 {
+    padding-top: 100px;
+    font-family: 'ClipArtKorea';
+    padding-bottom: 10px;
+    color: white;
+    -webkit-text-stroke: 1px #000;
+}
+#HERO p {
+    font-family: 'ClipArtKorea';
+    color: white;
+    -webkit-text-stroke: 1px #000;
+}
+#MEDIA {
+    background-image: url(../images/map.jpg)
+}
+#MEDIA h1 {
+    font-family: 'ClipArtKorea';
+    color: white;
+    -webkit-text-stroke: 1px #000;
+    padding-bottom: 10px;
+    padding-top: 100px;
+}
+#MEDIA p{
+    font-family: 'ClipArtKorea';
+    color: white;
+    -webkit-text-stroke: 1px #000;
+    padding-top: 10px;
+}
+#CONTENT {
+    background-image: url(../images/background.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center; /* 가운데 정렬 */
+    position: relative;
+}
+#CONTENT h1 {
+    padding-top: 100px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: 'ClipArtKorea';
+    -webkit-text-stroke: 1px black;
+}
+
+.image-container {
+    position: relative;  /* 자식 요소들이 해당 영역을 기준으로 위치하게 함 */
+    width: 100%;  /* 필요에 따라 조정 */
+    height: auto; /* 필요에 따라 높이 설정 */
+}
+
+.conphoto {
+    width: 100%;  /* 또는 원하는 너비로 설정 */
+    height: auto; /* 이미지 비율을 유지 */
+    display: block;  /* 이미지를 블록 요소로 만들어서 깨지지 않게 함 */
+}
+
+.image-wrap {
+    position: absolute;  /* 절대 위치 */
+    top: 95px;  /* 원하는 상단 위치 */
+    left: 50%;  /* 부모의 가로 중앙으로 설정 */
+    transform: translateX(-50%);  /* 정확히 가운데 정렬 */
+    display: flex;  /* 플렉스박스를 사용하여 자식 요소들 정렬 */
+    gap: 290px;  /* 이미지들 간격 설정 */
+    z-index: 1;  /* z-index 설정 (겹치는 순서) */
+}
+.image-wrap1 {
+    position: absolute;  /* 절대 위치 */
+    top: 495px;  /* 원하는 상단 위치 */
+    left: 50%;  /* 부모의 가로 중앙으로 설정 */
+    transform: translateX(-50%);  /* 정확히 가운데 정렬 */
+    display: flex;  /* 플렉스박스를 사용하여 자식 요소들 정렬 */
+    gap: 290px;  /* 이미지들 간격 설정 */
+    z-index: 1;  /* z-index 설정 (겹치는 순서) */
+}
+.overlay {
+    z-index: 2;  /* overlay 이미지가 다른 이미지 위에 겹치도록 설정 */
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    background-color: black;
+}
+.logof {
+    width: 263px;
+    height: 150px;
+}
+#CONTACT {
+    background-color: #000;
+}
+#CONTACT h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+.wrapp {
+    display: flex;
+    gap: 10px;
+    justify-content: center;  /* 자식 요소들을 가로로 중앙 정렬 */
+    padding-top: 50px;
+}
+.wrapp p {
+    color: white;
+}
+.btnwrap {
+    display: flex;
+    gap: 100px;
+    justify-content: center;  /* 자식 요소들을 가로로 중앙 정렬 */
+}
+.btnwrap img {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.mySwiper {
+    position: relative;
+    padding-bottom: 120px;
+}
+.swiper-button-next {
+    background: url(../images/button-next.png) no-repeat;
+    background-size: 50% auto;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+.swiper-button-prev {
+    background: url(../images/button-prev.png) no-repeat;
+    background-size: 50% auto;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+}
+.swiper-slide p {
+    font-family: 'ClipArtKorea';
+    font-size: 20px;
+}
+
+.dummy {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 2;
+}
+
+.gotop {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 70px; bottom: 180px;
+    display: none;
+    z-index: 100;
+}
+.pv {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    left: 50px; bottom: 50px;
+    display: none;
+    z-index: 100;
+}
+.pv1 {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    left: 50px; bottom: 180px;
+    display: none;
+    z-index: 100;
+}
+.gotop span {
+    position: absolute;
+    top: 17px; left: 15px;
+    width: 10px;
+    height: 10px;
+}
